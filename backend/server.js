@@ -12,7 +12,9 @@ const app = express();
 
 const corsOptions = {
   origin: ["https://source-frontend-nine.vercel.app"],
+
   credentials: true, // Permet d'envoyer les cookies et les headers d'authentification
+  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
