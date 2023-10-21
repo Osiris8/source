@@ -11,11 +11,7 @@ const app = express();
 // Autorisez les requêtes provenant de l'origine http://localhost:3000
 
 const corsOptions = {
-  origin: "*",
-  optionsSuccessStatus: 200,
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 200,
+  origin: ["http://localhost:3000", "https://source-frontend-nine.vercel.app"],
   credentials: true, // Permet d'envoyer les cookies et les headers d'authentification
 };
 
